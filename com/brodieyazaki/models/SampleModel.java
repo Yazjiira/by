@@ -18,6 +18,8 @@ import org.slf4j.LoggerFactory;
  */
 @Model(adaptables = { Resource.class})
 public class SampleModel {
+  private static final Logger LOGGER = LoggerFactory.getLogger(SampleModel.class);
+  
   @InheritableChild
   @ResourcePath("pathToChild")
   private Resource _myChild;
